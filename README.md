@@ -1,0 +1,2 @@
+# weChat
+copy weChat.app
