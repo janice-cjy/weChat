@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>angular.js+bootstrap test</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<style>
+.navUl{list-style-type:none;padding: 0px;height: 100%;}
+.container div{height: 100%;}
+.container{border: 1px solid red;}
+.navUl li{margin: 5px 0px;}
+.navUl>li:last-child{position: absolute;bottom: 0px;}
+
+</style>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-1">
+			 <ul class="navUl text-center">
+			 	<li><a href="#" ><img src="">头像</a></li>
+			 	<li role="presentation" class="active"><a href="#chats" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-pencil"></span></a></li>
+			 	<li role="presentation"><a href="#contacts" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-user"></span></a></li>
+			 	<li role="presentation"><a href="#favorites" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-heart"></span></a></li>
+			 	<li role="presentation"><a href="#set" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-wrench"></span></a></li>
+			 </ul>
+		</div>
+		<div class="col-md-11 tab-content">
+		    <div role="tabpanel" class="tab-pane active" id="chats">chats</div>
+		    <div role="tabpanel" class="tab-pane" id="contacts">contacts</div>
+		    <div role="tabpanel" class="tab-pane" id="favorites">favorites</div>
+		    <div role="tabpanel" class="tab-pane" id="set">set</div>
+		</div>
+
+	</div>
+</div>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/angular.js"></script>
+<script>
+$(function() {
+	var windowHeight=$(window).height();
+	$(".container").height(windowHeight);
+})
+</script>
+</body>
+</html>
